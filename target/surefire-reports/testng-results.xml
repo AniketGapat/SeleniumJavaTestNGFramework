@@ -2,62 +2,55 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-29T02:11:31 IST" name="Surefire suite" finished-at="2024-06-29T02:11:49 IST" duration-ms="18755">
+  <suite started-at="2024-07-03T20:28:57 IST" name="Suite" finished-at="2024-07-03T20:29:26 IST" duration-ms="29164">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@13e39c73]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:2, instance:AniketTestAcademy.tests.SubmitOrderTest@130d63be]" name="submitOrder" class="AniketTestAcademy.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-06-29T02:11:31 IST" name="Surefire test" finished-at="2024-06-29T02:11:49 IST" duration-ms="18755">
-      <class name="Cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@13e39c73]" started-at="2024-06-29T02:11:31 IST" name="setUpClass" finished-at="2024-06-29T02:11:32 IST" duration-ms="953" status="PASS">
+    <test started-at="2024-07-03T20:28:57 IST" name="Error Validations Test" finished-at="2024-07-03T20:28:57 IST" duration-ms="19">
+    </test> <!-- Error Validations Test -->
+    <test started-at="2024-07-03T20:28:57 IST" name="Submit Order Test" finished-at="2024-07-03T20:29:26 IST" duration-ms="29164">
+      <class name="AniketTestAcademy.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AniketTestAcademy.tests.SubmitOrderTest@130d63be]" started-at="2024-07-03T20:28:57 IST" name="launchApplication" finished-at="2024-07-03T20:29:02 IST" duration-ms="4711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:2, instance:AniketTestAcademy.tests.SubmitOrderTest@130d63be]" started-at="2024-07-03T20:29:02 IST" name="submitOrder" data-provider="getData" finished-at="2024-07-03T20:29:12 IST" duration-ms="10590" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5b051a5c]]>
+                <![CDATA[{password=Aniket@1234, product=ZARA COAT 3, email=aniketgapat@test.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@13e39c73]" started-at="2024-06-29T02:11:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-29T02:11:36 IST" duration-ms="4073" status="PASS">
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AniketTestAcademy.tests.SubmitOrderTest@130d63be]" started-at="2024-07-03T20:29:12 IST" name="tearDown" finished-at="2024-07-03T20:29:13 IST" duration-ms="403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:AniketTestAcademy.tests.SubmitOrderTest@130d63be]" started-at="2024-07-03T20:29:13 IST" name="launchApplication" finished-at="2024-07-03T20:29:15 IST" duration-ms="2492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:2, instance:AniketTestAcademy.tests.SubmitOrderTest@130d63be]" started-at="2024-07-03T20:29:15 IST" name="submitOrder" data-provider="getData" finished-at="2024-07-03T20:29:26 IST" duration-ms="10253" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Negative test of submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Error validation"]]>
+                <![CDATA[{password=Aniket@1234, product=ADIDAS ORIGINAL, email=aniket@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@13e39c73]" started-at="2024-06-29T02:11:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-29T02:11:49 IST" duration-ms="13600" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Positive test of submitting the order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Purchase the order from Ecommerce website"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AniketTestAcademy.tests.SubmitOrderTest@130d63be]" started-at="2024-07-03T20:29:26 IST" name="tearDown" finished-at="2024-07-03T20:29:26 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@13e39c73]" started-at="2024-06-29T02:11:49 IST" name="tearDownClass" finished-at="2024-06-29T02:11:49 IST" duration-ms="61" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Cucumber.TestNGTestRunner -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- AniketTestAcademy.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
 </testng-results>

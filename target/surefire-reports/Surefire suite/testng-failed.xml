@@ -7,9 +7,17 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1"/>
+          <include name="runScenario" invocation-numbers="1"/>
         </methods>
       </class> <!-- Cucumber.TestNGTestRunner -->
+      <class name="AniketTestAcademy.tests.SubmitOrderTest">
+        <methods>
+          <include name="orderHistorytest"/>
+          <include name="submitOrder" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- AniketTestAcademy.tests.SubmitOrderTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

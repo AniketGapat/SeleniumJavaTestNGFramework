@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: Cucumber.TestNGTestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.62 s -- in Cucumber.TestNGTestRunner
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.062 s <<< FAILURE! -- in Cucumber.TestNGTestRunner
+Cucumber.TestNGTestRunner.runScenario["Negative test of submitting the order", "Error validation"](1) -- Time elapsed: 0.407 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+	at AniketTestAcademy.testComponents.BaseTest.initializeDriver(BaseTest.java:60)
+	at AniketTestAcademy.testComponents.BaseTest.launchApplication(BaseTest.java:91)
+	at AniketTestAcademy.stepDefinitions.StepDefinitionImpl.I_landed_on_Ecommerce_page(StepDefinitionImpl.java:27)
+	at ✽.I landed on Ecommerce page(file:///C:/Users/LENOVO/eclipse-workspace/SeleniumFrameworkDesign/src/test/java/Cucumber/ErrorValidations.feature:8)
+
+Cucumber.TestNGTestRunner.runScenario["Positive test of submitting the order", "Purchase the order from Ecommerce website"](2) -- Time elapsed: 0.011 s <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+	at AniketTestAcademy.testComponents.BaseTest.initializeDriver(BaseTest.java:60)
+	at AniketTestAcademy.testComponents.BaseTest.launchApplication(BaseTest.java:91)
+	at AniketTestAcademy.stepDefinitions.StepDefinitionImpl.I_landed_on_Ecommerce_page(StepDefinitionImpl.java:27)
+	at ✽.I landed on Ecommerce page(file:///C:/Users/LENOVO/eclipse-workspace/SeleniumFrameworkDesign/src/test/java/Cucumber/PurchaseOrder.feature:25)
+
