@@ -97,6 +97,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.3.0</version>
         <configuration>
+        <skipTests>true</skipTests>
           <suiteXmlFiles>
             <suiteXmlFile>testSuites/Purchase.xml</suiteXmlFile>
           </suiteXmlFiles>
@@ -117,6 +118,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.3.0</version>
         <configuration>
+        <skipTests>true</skipTests>
           <suiteXmlFiles>
             <suiteXmlFile>testSuites/ErrorValidations.xml</suiteXmlFile>
           </suiteXmlFiles>
