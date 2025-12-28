@@ -1,4 +1,4 @@
-package AniketTestAcademy.data;
+package AniketTestAcademy.resources;
 
 import java.io.File;
 import java.io.IOException;
