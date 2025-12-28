@@ -2,6 +2,7 @@ package AniketTestAcademy.testComponents;
 
 import java.io.IOException;
 
+import AniketTestAcademy.resources.ExtentReporterNG;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -11,7 +12,6 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import AniketTestAcademy.resources.ExtentReporterNG;
 
 public class Listeners extends BaseTest implements ITestListener {
 	
@@ -19,7 +19,7 @@ public class Listeners extends BaseTest implements ITestListener {
 	
 	ExtentReports extent = ExtentReporterNG.getReportObject();
 	ExtentTest test;
-	ThreadLocal<ExtentTest> extentTest = new ThreadLocal();
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
 	@Override
 	public void onTestStart(ITestResult result) {

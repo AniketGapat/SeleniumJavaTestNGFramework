@@ -13,7 +13,7 @@
   </test>
   <test thread-count="5" name="Error Validations Test">
     <classes>
-      <class name="AniketTestAcademy.tests.ErrorValidations"/>
+      <class name="AniketTestAcademy.tests.ErrorValidationTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
